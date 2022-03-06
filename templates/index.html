@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Who am I?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('../static/static_screen_1.gif');
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 5vh;
+    }
+
+    input {
+      font-family: "Limelight";
+      letter-spacing: 0.3em;
+      font-size: 1em;
+      line-height: 1.5em;
+      color: #353740;
+    }
+
+    h3 {
+      font-family: "Limelight";
+      letter-spacing: 0.7em;
+      font-size: 3em;
+      font-weight: bold;
+      color: #202123;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 20vw;
+    }
+
+    input[type="text"] {
+      padding: 1em 1.5em;
+      border: 1px solid black;
+      border-radius: 3vh;
+      margin-bottom: 3vh;
+    }
+
+    ::placeholder {
+      color: #8e8ea0;
+      opacity: 1;
+    }
+
+    input[type="submit"] {
+      font-family: "Limelight";
+      letter-spacing: 0.3em;
+      padding: 1vw 0;
+      color: #fff;
+      background-color: black;
+      border: none;
+      border-radius: 2vh;
+      text-align: center;
+      cursor: pointer;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Who am I?</h3>
+  <form action="/" method="post">
+    <input type="text" name="name" placeholder="I go by ..." required />
+    <input type="text" name="country" placeholder="I was born in ..." required />
+    <input type="text" name="age" placeholder="My age ..." required />
+    <input type="text" name="occupation" placeholder="My occupation ..." required />
+    <input type="submit" value="FIND OUT NOW" />
+  </form>
+</body>
