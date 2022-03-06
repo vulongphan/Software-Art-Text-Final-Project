@@ -15,5 +15,6 @@ This project is inspired by the topic of identity fraud. These days, most intern
    ```
 4. Start the program
    ```
+   $ . venv/bin/activate # start virtual environment if it has not been started already
    $ flask run
    ```
